@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/signInPageFragment">
+
+    <fragment
+        android:id="@+id/signInPageFragment"
+        android:name="com.example.onlineshoptestapp.auth.SignInPageFragment"
+        android:label="fragment_sign_in_page"
+        tools:layout="@layout/fragment_sign_in_page" >
+        <action
+            android:id="@+id/action_signInPageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signInPageFragment_to_home_navigation_graph"
+            app:destination="@id/home_navigation_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.onlineshoptestapp.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signInPageFragment"
+            app:destination="@id/signInPageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_home_navigation_graph"
+            app:destination="@id/home_navigation_graph" />
+    </fragment>
+    <include app:graph="@navigation/home_navigation_graph" />
+</navigation>

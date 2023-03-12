@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:tint="#EEEFF4"
+    android:dither="true">
+</shape>
+
+
+
+

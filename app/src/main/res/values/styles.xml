@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="itemIconTint">#737297</item>
+        <item name="itemBackground">@drawable/bottom_button_bg</item>
+    </style>
+</resources>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_round_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backButton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/big_profile_photo"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Change photo"
+        android:textColor="#808080"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Username"
+        android:textColor="#3F3F3F"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:backgroundTint="#4E55D7"
+        android:drawableStart="@drawable/ic_share"
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingTop="0dp"
+        android:paddingEnd="65dp"
+        android:paddingBottom="0dp"
+        android:text="Upload item"
+        android:textAllCaps="false"
+        android:textColor="#EAEAEA"
+        android:textSize="14sp"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="textStart"
+        app:iconPadding="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTv" />
+
+    <ImageView
+        android:id="@+id/tradeCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtn" />
+
+    <TextView
+        android:id="@+id/tradeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Trade store"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tradeCard"
+        app:layout_constraintStart_toEndOf="@+id/tradeCard"
+        app:layout_constraintTop_toTopOf="@+id/tradeCard" />
+
+    <ImageView
+        android:id="@+id/tradeArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/round_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tradeTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tradeTv" />
+
+    <ImageView
+        android:id="@+id/payCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="@+id/tradeCard"
+        app:layout_constraintTop_toBottomOf="@+id/tradeCard" />
+
+    <TextView
+        android:id="@+id/payTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Payment method"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/payCard"
+        app:layout_constraintStart_toEndOf="@+id/payCard"
+        app:layout_constraintTop_toTopOf="@+id/payCard" />
+
+    <ImageView
+        android:id="@+id/payArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/round_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/payTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/payTv" />
+
+    <ImageView
+        android:id="@+id/balanceCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="@+id/payCard"
+        app:layout_constraintTop_toBottomOf="@+id/payCard" />
+
+    <TextView
+        android:id="@+id/balanceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Balance"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/balanceCard"
+        app:layout_constraintStart_toEndOf="@+id/balanceCard"
+        app:layout_constraintTop_toTopOf="@+id/balanceCard" />
+
+    <TextView
+        android:id="@+id/balanceSumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:text="$ 1593"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/balanceTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/balanceTv" />
+
+    <ImageView
+        android:id="@+id/historyCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_card"
+        app:layout_constraintStart_toStartOf="@+id/balanceCard"
+        app:layout_constraintTop_toBottomOf="@+id/balanceCard" />
+
+    <TextView
+        android:id="@+id/historyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Trade history"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/historyCard"
+        app:layout_constraintStart_toEndOf="@+id/historyCard"
+        app:layout_constraintTop_toTopOf="@+id/historyCard" />
+
+    <ImageView
+        android:id="@+id/historyArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/round_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/historyTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/historyTv" />
+
+    <ImageView
+        android:id="@+id/restoreIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_restore"
+        app:layout_constraintStart_toStartOf="@+id/historyCard"
+        app:layout_constraintTop_toBottomOf="@+id/historyCard" />
+
+    <TextView
+        android:id="@+id/restoreTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Restore purchase"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/restoreIv"
+        app:layout_constraintStart_toEndOf="@+id/restoreIv"
+        app:layout_constraintTop_toTopOf="@+id/restoreIv"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/restoreArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/round_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/restoreTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restoreTv" />
+
+    <ImageView
+        android:id="@+id/helpIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_help"
+        app:layout_constraintStart_toStartOf="@+id/restoreIv"
+        app:layout_constraintTop_toBottomOf="@+id/restoreIv" />
+
+    <TextView
+        android:id="@+id/helpTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Help"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/helpIv"
+        app:layout_constraintStart_toEndOf="@+id/helpIv"
+        app:layout_constraintTop_toTopOf="@+id/helpIv"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutImage"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:padding="0dp"
+        android:text="Log out"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#040402"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/helpIv"
+        app:layout_constraintTop_toBottomOf="@+id/helpIv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
